@@ -1,4 +1,4 @@
-baseurl = "https://hyas.netlify.app/"
+baseurl = "https://sigwroc.netlify.app/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
@@ -44,7 +44,11 @@ rssLimit = 10
   priority = 0.5
 
 [taxonomies]
+  tag = "tags"
   category = "categories"
+  field = "fields"
+# [taxonomies]
+#   category = "categories"
 
 [permalinks]
   blog = "/:title/"
@@ -62,3 +66,453 @@ rssLimit = 10
     [[related.indices]]
     name = "date"
     weight = 10
+
+
+# From other site
+[[collections]]
+name = "bibliography"
+label = "Bibliography Source"
+folder = "site/content/bibliography"
+create = true
+identifier_field = "shorttitle"
+
+  [[collections.fields]]
+  label = "ShortTitle"
+  name = "shorttitle"
+  widget = "string"
+  required = true
+
+  [[collections.fields]]
+  label = "PubType"
+  name = "pubtype"
+  widget = "select"
+  options = [
+  "journal",
+  "proceedings",
+  "book",
+  "chapter",
+  "edited collection"
+]
+  required = false
+
+  [[collections.fields]]
+  label = "Authors"
+  name = "authors"
+  widget = "string"
+  required = false
+
+  [[collections.fields]]
+  label = "Editors"
+  name = "editors"
+  widget = "string"
+  required = false
+
+  [[collections.fields]]
+  label = "Title"
+  name = "title"
+  widget = "string"
+  required = false
+
+  [[collections.fields]]
+  label = "Book Title"
+  name = "booktitle"
+  widget = "string"
+  required = false
+
+  [[collections.fields]]
+  label = "Year"
+  name = "year"
+  widget = "string"
+  required = false
+
+  [[collections.fields]]
+  label = "Journal"
+  name = "journal"
+  widget = "string"
+  required = false
+
+  [[collections.fields]]
+  label = "Volume"
+  name = "volume"
+  widget = "string"
+  required = false
+
+  [[collections.fields]]
+  label = "Issue"
+  name = "issue"
+  widget = "string"
+  required = false
+
+  [[collections.fields]]
+  label = "Pages"
+  name = "pages"
+  widget = "string"
+  required = false
+
+  [[collections.fields]]
+  label = "Publisher"
+  name = "publisher"
+  widget = "string"
+  required = false
+
+  [[collections.fields]]
+  label = "External URL"
+  name = "ext_url"
+  widget = "string"
+  required = false
+
+  [[collections.fields]]
+  label = "DOI"
+  name = "doi"
+  widget = "string"
+  required = false
+
+  [[collections.fields]]
+  label = "Annotation"
+  name = "annotation"
+  widget = "markdown"
+  required = false
+
+  [[collections.fields]]
+  label = "Tags"
+  name = "tags"
+  widget = "list"
+
+  [[collections.fields]]
+  label = "Fields"
+  name = "fields"
+  widget = "list"
+
+[[collections]]
+name = "projects"
+label = "WROC Projects"
+folder = "site/content/projects"
+create = true
+identifier_field = "title"
+
+  [[collections.fields]]
+  label = "ProjType"
+  name = "projtype"
+  widget = "select"
+  options = [ "method", "archival", "dataviz", "arts", "other" ]
+  required = true
+
+  [[collections.fields]]
+  label = "Contributors"
+  name = "contributors"
+  widget = "string"
+  required = false
+
+  [[collections.fields]]
+  label = "Title"
+  name = "title"
+  widget = "string"
+  required = false
+
+  [[collections.fields]]
+  label = "Year"
+  name = "year"
+  widget = "string"
+  required = false
+
+  [[collections.fields]]
+  label = "Organization"
+  name = "organization"
+  widget = "string"
+  required = false
+
+  [[collections.fields]]
+  label = "External URL"
+  name = "ext_url"
+  widget = "string"
+  required = false
+
+  [[collections.fields]]
+  label = "Description"
+  name = "description"
+  widget = "markdown"
+  required = true
+
+  [[collections.fields]]
+  label = "Image"
+  name = "image"
+  widget = "image"
+  required = false
+
+  [[collections.fields]]
+  label = "Tags"
+  name = "tags"
+  widget = "list"
+
+  [[collections.fields]]
+  label = "Fields"
+  name = "fields"
+  widget = "list"
+
+[[collections]]
+name = "post"
+label = "Post"
+folder = "site/content/post"
+create = true
+identifier_field = "title"
+
+  [[collections.fields]]
+  label = "Title"
+  name = "title"
+  widget = "string"
+
+  [[collections.fields]]
+  label = "Publish Date"
+  name = "date"
+  widget = "datetime"
+
+  [[collections.fields]]
+  label = "Intro Blurb"
+  name = "description"
+  widget = "text"
+
+  [[collections.fields]]
+  label = "Image"
+  name = "image"
+  widget = "image"
+  required = false
+
+  [[collections.fields]]
+  label = "Body"
+  name = "body"
+  widget = "markdown"
+
+[[collections]]
+name = "pages"
+label = "Pages"
+
+  [[collections.files]]
+  file = "site/content/_index.md"
+  label = "Home Page"
+  name = "home"
+
+    [[collections.files.fields]]
+    label = "Title"
+    name = "title"
+    widget = "string"
+
+    [[collections.files.fields]]
+    label = "Subtitle"
+    name = "subtitle"
+    widget = "string"
+
+    [[collections.files.fields]]
+    label = "Image"
+    name = "image"
+    widget = "image"
+    required = false
+
+    [[collections.files.fields]]
+    label = "Blurb"
+    name = "blurb"
+    widget = "object"
+
+      [[collections.files.fields.fields]]
+      label = "Heading"
+      name = "heading"
+      widget = "string"
+
+      [[collections.files.fields.fields]]
+      label = "Text"
+      name = "text"
+      widget = "text"
+
+    [[collections.files.fields]]
+    label = "Intro"
+    name = "intro"
+    widget = "object"
+
+      [[collections.files.fields.fields]]
+      label = "Heading"
+      name = "heading"
+      widget = "string"
+
+      [[collections.files.fields.fields]]
+      label = "Text"
+      name = "text"
+      widget = "text"
+
+    [[collections.files.fields]]
+    label = "Values"
+    name = "values"
+    widget = "object"
+
+      [[collections.files.fields.fields]]
+      label = "Heading"
+      name = "heading"
+      widget = "string"
+
+      [[collections.files.fields.fields]]
+      label = "Text"
+      name = "text"
+      widget = "text"
+
+  [[collections.files]]
+  file = "site/content/teaching/_index.md"
+  label = "Teaching"
+  name = "teaching"
+
+    [[collections.files.fields]]
+    label = "Title"
+    name = "title"
+    widget = "string"
+
+    [[collections.files.fields]]
+    label = "Subtitle"
+    name = "subtitle"
+    widget = "string"
+    required = false
+
+    [[collections.files.fields]]
+    label = "Image"
+    name = "image"
+    widget = "image"
+    required = false
+
+    [[collections.files.fields]]
+    label = "Body"
+    name = "body"
+    widget = "markdown"
+
+    [[collections.files.fields]]
+    label = "Sections"
+    name = "sections"
+    widget = "list"
+
+      [[collections.files.fields.fields]]
+      label = "Heading"
+      name = "heading"
+      widget = "string"
+
+      [[collections.files.fields.fields]]
+      label = "Text"
+      name = "text"
+      widget = "text"
+
+      [[collections.files.fields.fields]]
+      label = "Image"
+      name = "imageUrl"
+      widget = "image"
+      required = false
+
+  [[collections.files]]
+  file = "site/content/contact/_index.md"
+  label = "Contact Page"
+  name = "contact"
+
+    [[collections.files.fields]]
+    label = "Title"
+    name = "title"
+    widget = "string"
+
+    [[collections.files.fields]]
+    label = "Logo"
+    name = "logo"
+    widget = "image"
+
+    [[collections.files.fields]]
+    label = "Body"
+    name = "body"
+    widget = "markdown"
+
+    [[collections.files.fields]]
+    label = "Contact Entries"
+    name = "contact_entries"
+    widget = "list"
+
+      [[collections.files.fields.fields]]
+      label = "Heading"
+      name = "heading"
+      widget = "string"
+
+      [[collections.files.fields.fields]]
+      label = "Text"
+      name = "text"
+      widget = "text"
+
+  [[collections.files]]
+  file = "site/content/about/_index.md"
+  label = "About Page"
+  name = "about"
+
+    [[collections.files.fields]]
+    label = "Title"
+    name = "title"
+    widget = "string"
+
+    [[collections.files.fields]]
+    label = "Image"
+    name = "image"
+    widget = "image"
+
+    [[collections.files.fields]]
+    label = "Sections"
+    name = "sections"
+    widget = "list"
+
+      [[collections.files.fields.fields]]
+      label = "Heading"
+      name = "heading"
+      widget = "string"
+
+      [[collections.files.fields.fields]]
+      label = "Text"
+      name = "text"
+      widget = "markdown"
+
+      [[collections.files.fields.fields]]
+      label = "Image"
+      name = "imageUrl"
+      widget = "image"
+
+    [[collections.files.fields]]
+    label = "4Cs Meetings"
+    name = "cccc_meetings"
+    widget = "list"
+    folder = "site/content/cccc_meetings"
+    create = true
+
+      [[collections.files.fields.fields]]
+      label = "Heading"
+      name = "heading"
+      widget = "string"
+
+      [[collections.files.fields.fields]]
+      label = "Text"
+      name = "text"
+      widget = "text"
+
+      [[collections.files.fields.fields]]
+      label = "Image"
+      name = "imageUrl"
+      widget = "image"
+      required = false
+
+      [[collections.files.fields.fields]]
+      label = "Meeting Agenda"
+      name = "agenda"
+      widget = "file"
+      required = false
+      assetDir = "uploads/meetings"
+      media_folder = "../uploads/meetings"
+      public_folder = "../uploads/meetings"
+
+        [collections.files.fields.fields.config]
+        multiple = false
+
+      [[collections.files.fields.fields]]
+      label = "Meeting Notes"
+      name = "notes"
+      widget = "file"
+      required = false
+      assetDir = "uploads/meetings"
+      media_folder = "../uploads/meetings"
+      public_folder = "../uploads/meetings"
+
+        [collections.files.fields.fields.config]
+        multiple = false

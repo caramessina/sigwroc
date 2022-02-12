@@ -1,9 +1,9 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "Hyas"
+title = "SIGWROC"
 titleSeparator = "-"
-titleAddition = "Modern Hugo Starter"
+titleAddition = "Writing and Rhetorics of Code"
 description = "Hyas is a Hugo starter helping you build modern websites that are secure, fast, and SEO-ready — by default."
 
 ## Open Graph
@@ -12,17 +12,17 @@ ogLocale = "en_US"
 titleHome = "Hyas Hugo Starter"
 
 ## Twitter Cards
-twitterSite = "@gethyas"
-twitterCreator = "@henkverlinde"
+twitterSite = "@sigwroc"
+twitterCreator = "@lndgrn"
 
 ## JSON-LD
 # schemaType = "Person"
 schemaType = "Organization"
-schemaName = "Hyas"
-schemaAuthor = "Henk Verlinde"
-schemaAuthorTwitter = "https://twitter.com/henkverlinde"
+schemaName = "SIGWROC"
+schemaAuthor = "Chris Lindgren"
+schemaAuthorTwitter = "https://twitter.com/lndgrn"
 schemaAuthorLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
-schemaAuthorGitHub = "https://github.com/h-enk"
+schemaAuthorGitHub = "https://github.com/lingeringcode"
 schemaLocale = "en-US"
 schemaLogo = "logo-hyas.png"
 schemaLogoWidth = 512

@@ -1,6 +1,11 @@
 .content {
-  padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+h1.logo-text {
+  text-transform: uppercase;
+  color: #fe4300;
+  letter-spacing: .062rem;
 }
 
 h1,
@@ -24,7 +29,6 @@ h6,
   }
 
   .content {
-    padding-top: 2rem;
     padding-bottom: 2rem;
   }
 
@@ -44,23 +48,31 @@ h6,
   }
 }
 
+// MAIN CONTENT
+.main__content {
+  margin: 0 1em;
+}
+
 @include media-breakpoint-up(lg) {
   .content {
-    padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+  .main__content {
+    max-width: 925px;
+    padding: 1rem;
+    margin: auto;
   }
 }
 
 .section {
   background: $gray-200;
-  padding-top: 5rem;
   padding-bottom: 5rem;
 }
 
 .section p,
 .section a {
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
 
 .section svg {
