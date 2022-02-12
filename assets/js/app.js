@@ -11,3 +11,13 @@ import 'lazysizes';
 
 // global alert
 import './assets/js/alert';
+
+if (window.netlifyIdentity) {
+  window.netlifyIdentity.on("init", user => {
+    if (!user) {
+      window.netlifyIdentity.on("login", () => {
+        document.location.href = "/admin/";
+      });
+    }
+  });
+}
