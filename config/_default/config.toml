@@ -1,4 +1,4 @@
-baseurl = "https://wrocccc.netlify.app/"
+baseurl = "https://wroc.netlify.app/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
