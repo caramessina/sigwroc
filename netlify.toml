@@ -37,13 +37,11 @@
     Content-Security-Policy = '''
     default-src 'none';
     connect-src 'self';
-    script-src 'self' 'sha256-qWkjXenVA+7n3jmaobevJVEkmjqeTL5bZFOIzf8OFG4=' 'sha256-JXy9GK9Sb50pLJz2b9lcBOflxoQuinKD1LXvTSon+AI=' 'https://identity.netlify.com' 'https://unpkg.com';
+    script-src 'self' 'sha256-qWkjXenVA+7n3jmaobevJVEkmjqeTL5bZFOIzf8OFG4=' 'sha256-JXy9GK9Sb50pLJz2b9lcBOflxoQuinKD1LXvTSon+AI=';
     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
     base-uri 'self';
     font-src https://fonts.gstatic.com;
     img-src https://res.cloudinary.com;
     form-action 'none';
     frame-ancestors 'none';
-    sandbox allow-scripts allow-same-origin;
-    report-uri https://jeffschoonover.report-uri.com/r/d/csp/enforce;
-    report-to report-uri;'''
+    sandbox allow-scripts allow-same-origin;'''
