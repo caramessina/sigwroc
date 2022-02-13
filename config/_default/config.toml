@@ -72,7 +72,7 @@ rssLimit = 10
 [[collections]]
 name = "bibliography"
 label = "Bibliography Source"
-folder = "site/content/bibliography"
+folder = "content/bibliography"
 create = true
 identifier_field = "shorttitle"
 
@@ -186,7 +186,7 @@ identifier_field = "shorttitle"
 [[collections]]
 name = "projects"
 label = "WROC Projects"
-folder = "site/content/projects"
+folder = "content/projects"
 create = true
 identifier_field = "title"
 
@@ -252,7 +252,7 @@ identifier_field = "title"
 [[collections]]
 name = "post"
 label = "Post"
-folder = "site/content/post"
+folder = "content/post"
 create = true
 identifier_field = "title"
 
@@ -287,7 +287,7 @@ name = "pages"
 label = "Pages"
 
   [[collections.files]]
-  file = "site/content/_index.md"
+  file = "content/_index.md"
   label = "Home Page"
   name = "home"
 
@@ -353,7 +353,7 @@ label = "Pages"
       widget = "text"
 
   [[collections.files]]
-  file = "site/content/teaching/_index.md"
+  file = "content/teaching/_index.md"
   label = "Teaching"
   name = "teaching"
 
@@ -401,7 +401,7 @@ label = "Pages"
       required = false
 
   [[collections.files]]
-  file = "site/content/contact/_index.md"
+  file = "content/contact/_index.md"
   label = "Contact Page"
   name = "contact"
 
@@ -436,7 +436,7 @@ label = "Pages"
       widget = "text"
 
   [[collections.files]]
-  file = "site/content/about/_index.md"
+  file = "content/about/_index.md"
   label = "About Page"
   name = "about"
 
@@ -474,7 +474,7 @@ label = "Pages"
     label = "4Cs Meetings"
     name = "cccc_meetings"
     widget = "list"
-    folder = "site/content/cccc_meetings"
+    folder = "content/cccc_meetings"
     create = true
 
       [[collections.files.fields.fields]]
