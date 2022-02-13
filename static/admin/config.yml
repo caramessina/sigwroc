@@ -9,9 +9,6 @@ publish_mode: editorial_workflow
 media_folder: "static/uploads" # Media files will be stored in the repo under static/uploads
 public_folder: "/uploads" # The src attribute for uploaded media will begin with /uploads
 
-backend:
-  name: git-gateway
-
 media_folder: "site/static/uploads" # Folder where user uploaded files should go
 public_folder: "uploads"
 
