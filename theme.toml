@@ -1,6 +1,6 @@
 name = "SIGWROC"
 license = "MIT"
-licenselink = "https://github.com/h-enk/hyas/blob/master/LICENSE"
+licenselink = "https://github.com/SIGWROC/WROC/blob/master/LICENSE"
 description = "Hugo starter helping you build modern websites that are secure, fast, and SEO-ready — by default."
 homepage = "https://wroc.netlify.app/"
 tags = ["landing page", "blog", "minimal", "modern", "customizable", "bootstrap"]
