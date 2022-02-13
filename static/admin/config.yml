@@ -1,6 +1,5 @@
 backend:
   name: git-gateway
-  repo: SIGWROC/sigwroc
   branch: main
 
 # This line should *not* be indented
