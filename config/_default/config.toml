@@ -1,4 +1,4 @@
-baseurl = "https://sigwroc.netlify.app/"
+baseurl = "https://wrocccc.netlify.app/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
