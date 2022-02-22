@@ -1,9 +1,6 @@
 ---
 draft: false
-title: SIGWROC
-blurb:
-  heading: Test Blurb
-  text: Testing 1-2-3
+subtitle: Subtitle test
 values:
   heading: Testing Values heading
   text: Testing values paragraph
@@ -12,8 +9,15 @@ intro:
   heading: Testing intro heading
   text: Testing intro paragraph
 date: 2020-04-17T12:18:10+00:00
-subtitle: Subtitle test
+title: SIGWROC
+feature:
+  heading: Feature Test
+  featurecopy: Feature copy test.
+  image: /uploads/python_code.png
 images: []
+blurb:
+  heading: Test Blurb
+  text: Testing 1-2-3
 lead: Hyas is a Hugo starter helping you build modern websites that are secure,
   fast, and SEO-ready — by default.
 description: Hugo starter helping you build modern websites.
