@@ -308,8 +308,8 @@ label = "Pages"
     required = false
 
     [[collections.files.fields]]
-    label = "Blurb"
-    name = "blurb"
+    label = "Feature Box"
+    name = "feature"
     widget = "object"
 
       [[collections.files.fields.fields]]
@@ -318,9 +318,15 @@ label = "Pages"
       widget = "string"
 
       [[collections.files.fields.fields]]
-      label = "Text"
+      label = "Left-Positioned Image"
+      name = "image"
+      widget = "image"
+      required = true
+
+      [[collections.files.fields.fields]]
+      label = "Right-Positioned Copy"
       name = "text"
-      widget = "text"
+      widget = "markdown"
 
     [[collections.files.fields]]
     label = "Intro"

@@ -14,7 +14,7 @@ sections:
       means to sustain this  scholarly community, we formed a NCTE/CCCC Special
       Interest group in 2017, so we could solidify our field and presence across
       the discipline.
-    imageUrl: img/dig-poster-2.png
+    imageUrl: images/dig-poster-2.png
 cccc_meetings:
   - heading: 2017 Meeting
     text: More info to come ...
