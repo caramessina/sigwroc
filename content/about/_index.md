@@ -1,6 +1,6 @@
 ---
 title: About
-image: img/illustrations-meeting-space.svg
+image: /uploads/python_code.png
 sections:
   - heading: Exigence
     text: >
