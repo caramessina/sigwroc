@@ -14,7 +14,7 @@ sections:
       means to sustain this  scholarly community, we formed a NCTE/CCCC Special
       Interest group in 2017, so we could solidify our field and presence across
       the discipline.
-    imageUrl: /uploads/python_code.png
+    imageUrl: /uploads/4c_logo.gif
     alttext: Python code
 cccc_meetings:
   - heading: 2017 Meeting

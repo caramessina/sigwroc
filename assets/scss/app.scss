@@ -22,14 +22,16 @@
 @import "components/forms";
 @import "components/images";
 @import "components/featurebox";
+@import "components/about";
 @import "layouts/footer";
 @import "layouts/header";
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/sidebar";
 
+@import "common/display";
 @import "common/utils";
 @import "common/maxwidths";
 @import "common/spacing";
-@import "common/flexbox";
 @import "common/overflow";
+@import "common/flexbox";
