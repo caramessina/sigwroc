@@ -1,7 +1,7 @@
 {{ define "main" }}
   <!-- For each posting page, but I don't want this feature -->
   <div class="main__content mw6 ph3 pv4">
-    <!-- <h1 class="f2 lh-title b mb3">{{.Title}}</h1> -->
+
     <ul>
     {{ range (where .Pages "Section" "bibliography") }}
     <li>
