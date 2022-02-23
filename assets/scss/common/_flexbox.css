@@ -1,6 +1,10 @@
 .flex { display: flex; }
 .inline-flex { display: inline-flex; }
 
+.flex__gap_1 { gap: 1em }
+.flex__gap_2 { gap: 2em }
+.flex__gap_3 { gap: 3em }
+
 /* 1. Fix for Chrome 44 bug.
  * https://code.google.com/p/chromium/issues/detail?id=506893 */
 .flex-auto {
@@ -32,6 +36,7 @@
 .justify-center  { justify-content: center; }
 .justify-between { justify-content: space-between; }
 .justify-around  { justify-content: space-around; }
+.justify-evenly  { justify-content: space-evenly; }
 
 .content-start   { align-content: flex-start; }
 .content-end     { align-content: flex-end; }
