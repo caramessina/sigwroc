@@ -109,15 +109,15 @@ collections: # A list of collections the CMS should be able to edit
         name: "about"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Image, name: image, widget: image}
+          - {label: Image, name: image, widget: image, required: false}
           - label: Sections
             name: sections
             widget: list
             fields:
               - {label: Heading, name: heading, widget: string}
               - {label: "Section Copy", name: text, widget: markdown}
-              - {label: Image, name: imageUrl, widget: image}
-              - {label: "Image Alt Text", name: alttext, widget: text}
+              - {label: Image, name: imageUrl, widget: image, required: false}
+              - {label: "Image Alt Text", name: alttext, widget: text, required: false}
           - label: "4Cs Meetings"
             name: "cccc_meetings"
             widget: list
