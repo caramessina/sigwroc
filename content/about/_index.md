@@ -1,6 +1,6 @@
 ---
 title: About
-image: /uploads/python_code.png
+image: ""
 sections:
   - heading: Exigence
     text: >
@@ -14,7 +14,8 @@ sections:
       means to sustain this  scholarly community, we formed a NCTE/CCCC Special
       Interest group in 2017, so we could solidify our field and presence across
       the discipline.
-    imageUrl: images/dig-poster-2.png
+    imageUrl: /uploads/python_code.png
+    alttext: Python code
 cccc_meetings:
   - heading: 2017 Meeting
     text: More info to come ...
