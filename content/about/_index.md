@@ -44,8 +44,8 @@ cccc_meetings:
     text: "The WROC SIG met virtually for 4Cs 2021. The mission of the WROC group
       was introduced and short lightning round breakout rooms were created so
       group members could get to know each other. "
-    agenda: ../uploads/meetings/4c20-sigwroc-proposal.pdf
-    notes: ../uploads/meetings/2021-sigwroc-lightning-rounds.pdf
+    agenda: ../uploads/meetings/2021-sigwroc-lightning-rounds.pdf
+    notes: ""
   - heading: 2022 Meeting
     text: "The WROC SIG will meet virtually again for 4Cs 2022. Stay tuned for more
       information! "
